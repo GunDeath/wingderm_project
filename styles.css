@@ -1,3 +1,4 @@
+/* Global */
 :root{
     --primary: #EDECEC;
     --dark: #333;
@@ -16,6 +17,18 @@ body{
     background: var(--light);
     line-height: 1.4;
 }
+
+.title_by_block{
+    font-size: 45px;
+    color: #000;
+}
+
+.text_by_block{
+    color: var(--text_color);
+    font-size: 18px;
+}
+
+/**/
 
 .wrapper{
     display: grid;
@@ -228,34 +241,107 @@ body{
     background-size: cover;
     background-image: url(./images/icon-size.png);
 }
-/*second block*/
-/*
-.view-product{
+
+/*view block*/
+
+
+.top-container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+  
+.grid-2 {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.showcase{
-    min-height: 600px;
-    background: url(./images/order-container.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
+.photo_review img{
+    max-width: 600px;
+}
+
+.product_review{
+    margin-top: -45px;
+}
+
+.product_review p{
+    color: var(--text_color);
+    font-size: 18px;
+}
+
+.product_review h2{
+    font-size: 45px;
+    color: #000;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.bottom-container{
+    min-height: 550px;
+    background: var(--primary);
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4rem;
+}
+
+.product_img{
+    display: grid;
+    align-items: flex-end;
+}
+
+.call_us{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.showcase h1{
-    font-size: 4rem;
-    margin-bottom: 0;
-    color: var(--dark);
+.call_us h1{
+    margin-bottom: -5px;
 }
 
-.showcase p{
-    font-size: 1.3rem;
-    margin-top: 0;
-    color: var(--dark);
-}*/
+.product_img img{
+    display: grid;
+    max-width: 600px;
+    background-size: cover;
+    justify-content: center;
+}
 
+.input_div{
+    display: inline-block;
+}
+
+.number_tel{
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #e3e3e3;
+    font-size: 15px;
+    box-shadow: none;
+    color: #777;
+    outline: 0;
+    height: 45px;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    padding-left: 1rem; 
+}
+
+.number_btn{
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    background: linear-gradient(103.27deg,#67a2fb 0,#6374f9 100%);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    height: 45px;
+}
